@@ -19,15 +19,7 @@ function Contact() {
         <span className="border-b-[3px]  border-secondary-100"> Contact</span>{" "}
         <span> with Me</span>
       </h1>
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 "
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-400px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 ">
         <div
           className="ml-[5.5rem] md:ml-0"
           ref={ref}
@@ -120,7 +112,7 @@ function Contact() {
             <p>Egypt</p>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
