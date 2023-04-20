@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 20px;
+  border: 2px solid #f1f1f1;
+}
+
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slide-up 1s ease-out forwards;
+}
+.tagcloud--item:hover {
+  color: #db1c28;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
