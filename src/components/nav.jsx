@@ -108,17 +108,6 @@ function Nav() {
                 Projects
               </a>
             </li>
-            <li className="hover:text-secondary-100">
-              <a
-                href="/#reviews"
-                className={`${
-                  activeLink === "Reviews" ? "text-primary bg-secondary" : ""
-                }`}
-                onClick={() => handleActiveLink("Reviews")}
-              >
-                Reviews
-              </a>
-            </li>
           </ul>
           <label className="btn btn-ghost btn-circle avatar pt-2">
             <div className="w-9 md:w-10 rounded-full ring-1 ring-offset-2 ring-primary hover:ring-secondary-100 ">
