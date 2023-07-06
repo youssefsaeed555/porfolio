@@ -187,7 +187,7 @@ function Nav() {
               Projects
             </a>
           </li>
-          <li className="hover:text-secondary-100">
+          {/* <li className="hover:text-secondary-100">
             <a
               href="/#reviews"
               className={`${
@@ -197,11 +197,11 @@ function Nav() {
             >
               Reviews
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="navbar-end ">
-        <div className="flex max-[550px]:mr-6">
+        {/* <div className="flex max-[550px]:mr-6">
           <a href="https://www.facebook.com/yossef.said.5/">
             <i className={`${socialStyle} fa-facebook`}></i>
           </a>
@@ -211,7 +211,7 @@ function Nav() {
           <a href="https://www.linkedin.com/in/youssef-saeed-60aa931a6/">
             <i className={`${socialStyle} fa-linkedin`}></i>
           </a>
-        </div>
+        </div> */}
         <a
           className="border-[1px] text-sm md:text-md border-white border-solid py-1 md:py-2 px-4 text-center hover:transition-all hover:duration-500 hover:bg-secondary hover:text-white font-bold cursor-pointer"
           href="/#contact"

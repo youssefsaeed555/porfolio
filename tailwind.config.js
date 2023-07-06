@@ -4,20 +4,20 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#212428",
-        secondary: "#DB1C28",
-        "primary-100": "#212128",
+        primary: "#022A30",
+        secondary: "#D5EC7B",
+        "primary-100": "#fff",
       },
       colors: {
-        primary: "#C4CFDE",
-        secondary: "#FF014F",
-        "secondary-100": "#DB1C28",
+        primary: "#fff",
+        secondary: "#ffa",
+        "secondary-100": "#D5EC7B",
       },
       hover: {
-        primary: "#DB1C28",
+        primary: "#120",
       },
       animation: {
-        "spin-slow": "spin 8s linear infinite",
+        "spin-slow": "spin 1s linear infinite",
       },
     },
   },

@@ -1,6 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Montserrat:wght@100;300;400;500;900&family=Open+Sans:wght@700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-custom {
+  overflow: hidden;
+}
+
+.card-custom-image {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.icon-container {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.link-custom {
+  font-weight: 500;
+  position: relative;
+}
+
+.link-custom::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+.link-custom:hover {
+  color: var(--color-brand);
+}
 
 .animate-fade-in-up {
   animation: fade-in-up 1s ease-in-out;
@@ -15,7 +65,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: #033f47;
   border-radius: 20px;
   border: 2px solid #f1f1f1;
 }
@@ -26,7 +76,7 @@
   animation: slide-up 1s ease-out forwards;
 }
 .tagcloud--item:hover {
-  color: #db1c28;
+  color: #087c89;
   font-weight: bold;
   cursor: pointer;
   font-size: 40px;

@@ -11,7 +11,7 @@ function TimeLine() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div id="education" className="max-[500px]:text-center">
+    <div id="education" className="max-[500px]:text-center overflow-x-hidden">
       <span className="text-secondary-100 text-sm mb-2">EDUCATION</span>
       <h1
         ref={ref}
@@ -28,7 +28,7 @@ function TimeLine() {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#DB1C29", color: "#C4CFDE" }}
+          contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
           contentArrowStyle={{ borderRight: "7px solid " }}
           date="2018"
           iconStyle={{ background: "#C4CFDE", color: "#fff" }}
@@ -41,7 +41,7 @@ function TimeLine() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2021"
-          contentStyle={{ background: "#DB1C29", color: "#C4CFDE" }}
+          contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
           <h4 className="vertical-timeline-element-subtitle font-bold">
@@ -53,7 +53,7 @@ function TimeLine() {
           className="vertical-timeline-element--work"
           date="2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentStyle={{ background: "#DB1C29", color: "#C4CFDE" }}
+          contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
         >
           <h4 className="vertical-timeline-element-subtitle font-bold">
             Graduation Project
@@ -64,7 +64,7 @@ function TimeLine() {
           className="vertical-timeline-element--work"
           date="2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentStyle={{ background: "#DB1C29", color: "#C4CFDE" }}
+          contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
         >
           <h4 className="vertical-timeline-element-subtitle font-bold">
             CS Degree
@@ -78,7 +78,7 @@ function TimeLine() {
           className="vertical-timeline-element--education"
           date="2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentStyle={{ background: "#DB1C29", color: "#C4CFDE" }}
+          contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
         >
           <h4 className="vertical-timeline-element-subtitle font-bold">
             Joined ITI

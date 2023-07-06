@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@frank-mayer/react-tag-cloud": "^1.2.1",
+    "aos": "^2.3.4",
     "daisyui": "^2.51.5",
     "framer-motion": "^10.12.4",
     "lodash": "^4.17.21",

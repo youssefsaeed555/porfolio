@@ -5,7 +5,7 @@ import Banner from "./components/banner";
 import WhatIDo from "./components/WhatIDo";
 import TimeLine from "./components/TimeLine";
 import Projects from "./components/Projects";
-import Swiper from "./components/Swiper";
+// import Swiper from "./components/Swiper";
 import Contact from "./components/Contact";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
                   <Home></Home>
                   <TimeLine></TimeLine>
                   <Projects></Projects>
-                  <Swiper></Swiper>
+                  {/* <Swiper></Swiper> */}
                   <Contact></Contact>
                 </>
               }

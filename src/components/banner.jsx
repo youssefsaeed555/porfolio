@@ -10,7 +10,7 @@ function Banner() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["MERN developer", "front_end developer", "node_js developer"],
+      strings: ["MERN developer", "Frontend developer", "Nodejs developer"],
       typeSpeed: 60,
       backSpeed: 10,
       backDelay: 700,
@@ -27,44 +27,51 @@ function Banner() {
   return (
     <section>
       <div className="container mx-auto max-w-7xl text-lg md:text-3xl max-[500px]:text-center">
-        <span className="font-bold flex justify-center scroll-animation  text-primary p-6 md:p-12 uppercase">
-          Welcome to my portfolio
-        </span>
+        <div className="max-[500px]:w-full max-[500px]: font-bold flex justify-center scroll-animation  text-primary p-5 md:p-8 uppercase">
+          <motion.h2
+            className="my-6 text-lg md:text-xl "
+            transition={{ duration: 0.5, delay: 0.7 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+          >
+            Hello I'm youssef saeed, <br />
+            <span
+              ref={el}
+              className="text-secondary transition-all duration-500 font-bold "
+            />{" "}
+          </motion.h2>
+        </div>
         <div className="grid grid-col  md:grid-cols-2 gap-4 text-primary ">
-          <div>
-            <motion.h1 className="text-4xl font-bold my-7 md:my-14 ">
+          <div className="max-[500px]:order-2">
+            <motion.h1 className="text-4xl font-bold my-7 md:my-7 ">
               <span className="border-b-[3px] border-secondary-100">
                 {" "}
                 About
               </span>{" "}
               <span>Me</span>
             </motion.h1>
-            <motion.h2
-              className="my-6 text-xl md:text-2xl "
-              transition={{ duration: 0.5, delay: 0.7 }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              Hi I'm youssef saeed,{" "}
-              <span
-                ref={el}
-                className="text-secondary transition-all duration-500 font-bold "
-              />{" "}
-            </motion.h2>
             <p
               ref={ref}
-              className="text-md md:text-2xl leading-10"
+              className="text-md md:text-xl pb-5 leading-10 w-full"
               style={{
                 transform: isInView ? "none" : "translateX(-200px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
               }}
             >
-              I'm a software engineer with bcs degree in computer science from
-              FCI-SCU. I create websites and share ideas through web pages. My
-              passion to learning new things pushes up my limits towards
-              achieving bigger goals.
+              A Software Developer graduated from Web & User Interface
+              Development track (ITI) with experience in building dynamic and
+              interactive web applications, specializing in developing web apps
+              using the MEARN stack, I am passionate about creating high-quality
+              and scalable software solutions that meet business objectives and
+              exceed user expectations. I am also constantly learning and
+              staying up-to-date with the latest technologies to ensure that my
+              skills remain relevant and in-demand in the ever-changing world of
+              software development.
             </p>
+            <a href="tel:+201286880684" className="link-custom text-2xl">
+              Call: (+20) 1286880684
+            </a>
             <div
               className="flex justify-around mr-0 md:mr-16"
               style={{
@@ -74,7 +81,7 @@ function Banner() {
               }}
             >
               <a
-                className="btn bg-secondary w-40 rounded-[10px] my-14"
+                className="btn bg-secondary-100 text-primary font-extrabold w-40 rounded-[10px] my-7"
                 href={resume}
                 download
               >
@@ -82,13 +89,13 @@ function Banner() {
               </a>
               <a
                 href="/#contact"
-                className="btn bg-secondary w-40 rounded-[10px] my-14"
+                className="btn bg-secondary text-primary font-extrabold w-40 rounded-[10px] my-7"
               >
                 Hire Me
               </a>
             </div>
           </div>
-          <div>
+          <div className="max-[500px]:order-1">
             <img
               src="images/youssef.jpg"
               className="banner mask mask-squircle w-full h-[400px] my-8 object-contain"

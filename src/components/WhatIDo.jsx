@@ -21,19 +21,19 @@ function WhatIDo() {
       </h1>
       <div className=" relative z-10 grid grid-cols-1 md:grid-cols-3 text-xl md:text-2xl p-0 md:p-10 text-primary w-full">
         <Card
-          head={"Business Stratagy"}
+          head={"Web Developing"}
           paragraph={
-            "I throw myself down among the tall grass by the stream as Ilieclose to the earth"
+            "Specializing in high-quality website development, I create responsive and intuitive websites tailored to each client's unique needs.            "
           }
-          icon={"fa-solid fa-bars"}
+          icon={"fa-solid fa-code"}
           w="64"
         ></Card>
         <Card
-          head={"App Development"}
+          head={"UI/UX Design"}
           paragraph={
-            "We’ll handle everything from to app development process until it is time to make your project live."
+            "Crafting exceptional UI/UX designs, I specialize in creating visually stunning and user-friendly interfaces that enhance the user experience."
           }
-          icon={"fa-solid fa-code"}
+          icon={"fa-solid fa-bars "}
           w="64"
         ></Card>
         <Card
@@ -44,7 +44,7 @@ function WhatIDo() {
           icon={"fa-solid fa-database"}
           w="64"
         ></Card>
-        <Card
+        {/* <Card
           head={"Creative Work"}
           paragraph={
             "I throw myself down among the tall grass by the stream as Ilie close to the earth."
@@ -67,7 +67,7 @@ function WhatIDo() {
           }
           icon={"fa-solid fa-person-chalkboard"}
           w="64"
-        ></Card>
+        ></Card> */}
       </div>
       <hr className="m-10"></hr>
     </motion.div>

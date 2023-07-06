@@ -7,7 +7,7 @@ function Card({ icon, head, paragraph, src, w }) {
   const isInView = useInView(ref, { once: true });
   const cardStyle = `card w-${
     w ? w : "96"
-  } bg-primary-100 m-6 shadow-2xl hover:bg-zinc-950 hover:scale-105 cursor-pointer  duration-500`;
+  } bg-[#033F47] m-6 shadow-2xl hover:bg-zinc-950 hover:scale-105 cursor-pointer  duration-500`;
   return (
     <div
       className={cardStyle}
@@ -15,7 +15,7 @@ function Card({ icon, head, paragraph, src, w }) {
       style={{
         transform: isInView ? "none" : "translateX(-200px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.9s",
+        transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
       }}
     >
       <div className="card-body">

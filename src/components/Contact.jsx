@@ -19,7 +19,7 @@ function Contact() {
         <span className="border-b-[3px]  border-secondary-100"> Contact</span>{" "}
         <span> with Me</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 ">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 ">
         <div
           className="ml-[5.5rem] md:ml-0"
           ref={ref}
@@ -111,6 +111,48 @@ function Contact() {
             </h2>
             <p>Egypt</p>
           </div>
+        </div>
+      </div> */}
+
+      <div>
+        <div class="col-lg-8 pb-4 text-center text-md-start">
+          <h6 class="h1 fw-bold">Let's talk</h6>
+        </div>
+        <div
+          className="flex justify-center py-8 gap-8 "
+          ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <a href="mailto:yossefsaid555@gmail.com" className="hover:scale-150">
+            <img
+              className="w-16"
+              src="https://img.icons8.com/plasticine/100/null/gmail-new.png"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/youssef-saeed-60aa931a6/"
+            target="_blank"
+            className="hover:scale-150"
+          >
+            <img
+              className="w-16"
+              src="https://img.icons8.com/pulsar-color/48/null/linkedin.png"
+            />
+          </a>
+          <a
+            href="https://github.com/youssefsaeed555/"
+            target="_blank"
+            className="hover:scale-150"
+          >
+            <img
+              className="w-16"
+              src="https://img.icons8.com/pulsar-color/48/null/github.png"
+            />
+          </a>
         </div>
       </div>
     </div>
