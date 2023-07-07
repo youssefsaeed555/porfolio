@@ -20,15 +20,7 @@ function Projects() {
         <span className="border-b-[3px]  border-secondary-100"> My</span>{" "}
         <span>projects</span>
       </h1>
-      <div
-        className=" flex flex-col justify-center items-center m-5 font-bold uppercase max-[500px]:text-2xl"
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
+      <div className=" flex flex-col justify-center items-center m-5 font-bold uppercase max-[500px]:text-2xl">
         <p className="m-1 md:m-5">My Recent Projects</p>
         {/* <a
           className="btn px-14 py-3 text-center bg-secondary mx-3"
@@ -112,9 +104,9 @@ function Projects() {
           className="card card-compact max-[500px]:w-[85%] max-[500px]:mx-auto w-[35%] bg-[#033F47] shadow-xl "
           ref={ref}
           style={{
-            transform: isInView ? "none" : "translateX(-200px)",
+            transform: isInView ? "none" : "translateX(-400px)",
             opacity: isInView ? 1 : 0,
-            transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all .8s cubic-bezier(0.17, 0.55, 0.55, 1) 0.9s",
           }}
         >
           <figure>

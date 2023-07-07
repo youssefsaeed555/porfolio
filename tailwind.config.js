@@ -11,7 +11,7 @@ export default {
       colors: {
         primary: "#fff",
         secondary: "#ffa",
-        "secondary-100": "#D5EC7B",
+        "secondary-100": "#D5EC4B",
       },
       hover: {
         primary: "#120",

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import resume from "../../public/resume.pdf";
+import resume from "/youssef saeed bikheet resume.pdf";
 import { useInView, motion } from "framer-motion";
 
 function Banner() {
@@ -69,11 +69,9 @@ function Banner() {
               skills remain relevant and in-demand in the ever-changing world of
               software development.
             </p>
-            <a href="tel:+201286880684" className="link-custom text-2xl">
-              Call: (+20) 1286880684
-            </a>
+
             <div
-              className="flex justify-around mr-0 md:mr-16"
+              className="flex justify-around mr-0 md:mr-16 max-[500px]:flex-col max-[500px]:items-center"
               style={{
                 transform: isInView ? "none" : "translateY(-200px)",
                 opacity: isInView ? 1 : 0,
@@ -81,17 +79,17 @@ function Banner() {
               }}
             >
               <a
-                className="btn bg-secondary-100 text-primary font-extrabold w-40 rounded-[10px] my-7"
+                href="tel:+201286880684"
+                className="link-custom text-2xl py-2 "
+              >
+                Call: (+20) 1286880684
+              </a>
+              <a
+                className="btn bg-[#033F47] text-primary font-extrabold w-40 rounded-[10px] shadow-inner"
                 href={resume}
                 download
               >
                 Download cv
-              </a>
-              <a
-                href="/#contact"
-                className="btn bg-secondary text-primary font-extrabold w-40 rounded-[10px] my-7"
-              >
-                Hire Me
               </a>
             </div>
           </div>
