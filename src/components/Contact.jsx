@@ -9,12 +9,9 @@ function Contact() {
       <span className="text-secondary-100 text-sm mb-5">CONTACT</span>
       <h1
         className="text-4xl font-bold mb-4"
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="700"
       >
         <span className="border-b-[3px]  border-secondary-100"> Contact</span>{" "}
         <span> with Me</span>
@@ -115,17 +112,19 @@ function Contact() {
       </div> */}
 
       <div>
-        <div class="col-lg-8 pb-4 text-center text-md-start">
-          <h6 class="h1 fw-bold">Let's talk</h6>
+        <div
+          className="col-lg-8 pb-4 text-center text-md-start"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <h6 className="h1 fw-bold">Let's talk</h6>
         </div>
         <div
           className="flex justify-center py-8 gap-8 "
-          ref={ref}
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
         >
           <a href="mailto:yossefsaid555@gmail.com" className="hover:scale-150">
             <img

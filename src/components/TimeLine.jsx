@@ -1,5 +1,4 @@
-import { useInView } from "framer-motion";
-import React, { useRef } from "react";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -7,25 +6,26 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function TimeLine() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   return (
-    <div id="education" className="max-[500px]:text-center overflow-x-hidden">
+    <div
+      id="education"
+      className="max-[500px]:text-center overflow-x-hidden pt-10"
+    >
       <span className="text-secondary-100 text-sm mb-2">EDUCATION</span>
       <h1
-        ref={ref}
         className="text-4xl font-bold"
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="700"
       >
         <span className="border-b-[3px]  border-secondary-100"> My</span>{" "}
         <span>education</span>
       </h1>
-      <VerticalTimeline>
+      <VerticalTimeline
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="700"
+      >
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#033F47", color: "#C4CFDE" }}

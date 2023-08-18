@@ -7,8 +7,14 @@ import TimeLine from "./components/TimeLine";
 import Projects from "./components/Projects";
 // import Swiper from "./components/Swiper";
 import Contact from "./components/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <BrowserRouter>
