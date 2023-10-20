@@ -11,7 +11,7 @@ function TimeLine() {
       id="education"
       className="max-[500px]:text-center overflow-x-hidden pt-10"
     >
-      <span className="text-secondary-100 text-sm mb-2">EDUCATION</span>
+      <span className="text-secondary-100 text-sm mb-2">EXPERIENCE</span>
       <h1
         className="text-4xl font-bold"
         data-aos="fade-right"
@@ -19,7 +19,7 @@ function TimeLine() {
         data-aos-duration="700"
       >
         <span className="border-b-[3px]  border-secondary-100"> My</span>{" "}
-        <span>education</span>
+        <span>experience</span>
       </h1>
       <VerticalTimeline
         data-aos="fade-up"
@@ -33,7 +33,7 @@ function TimeLine() {
           date="2018"
           iconStyle={{ background: "#C4CFDE", color: "#fff" }}
         >
-          <h4 className="vertical-timeline-element-title font-bold uppercase">
+          <h4 className="text-white vertical-timeline-element-title font-bold uppercase">
             joined FCI-SCU
           </h4>
           <p>Faculty of Computers and Informatics, Suez canal university</p>
@@ -44,7 +44,7 @@ function TimeLine() {
           contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h4 className="vertical-timeline-element-subtitle font-bold">
+          <h4 className="text-white vertical-timeline-element-subtitle font-bold">
             MERN Developer
           </h4>
           <p>start learn MERN development</p>
@@ -55,7 +55,7 @@ function TimeLine() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
         >
-          <h4 className="vertical-timeline-element-subtitle font-bold">
+          <h4 className="text-white vertical-timeline-element-subtitle font-bold">
             Graduation Project
           </h4>
           <p>My first large project that i worked on with team</p>
@@ -66,7 +66,7 @@ function TimeLine() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
         >
-          <h4 className="vertical-timeline-element-subtitle font-bold">
+          <h4 className="text-white vertical-timeline-element-subtitle font-bold">
             CS Degree
           </h4>
           <p>
@@ -80,10 +80,21 @@ function TimeLine() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
         >
-          <h4 className="vertical-timeline-element-subtitle font-bold">
+          <h4 className="text-white vertical-timeline-element-subtitle font-bold">
             Joined ITI
           </h4>
           <p>9 months scholarship trainee track web & user interface</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2023"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentStyle={{ background: "#033F47", color: "#C4CFDE" }}
+        >
+          <h4 className="vertical-timeline-element-subtitle text-white font-bold">
+            Marketeers Research Company
+          </h4>
+          <p>Start new position as Frontend developer (React)</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}

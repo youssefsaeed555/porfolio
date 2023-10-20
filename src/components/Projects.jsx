@@ -32,6 +32,77 @@ function Projects() {
         >
           <figure>
             <img
+              src="/images/natiq.png"
+              alt="project"
+              className="hover:scale-110 ease-out duration-150"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Natiq</h2>
+            <p>
+              This is a simple React web application that enables users to enter
+              Arabic text, which is then converted to audio using an electronic
+              voice. The last word of the text is repeated three times for
+              emphasis.
+            </p>
+            <h3>
+              <span className="font-extrabold">Technologies used:</span>{" "}
+              React.js, Tailwind, Daisyui.
+            </h3>
+            <div className="card-actions justify-start">
+              <a
+                href="https://natiq-ten.vercel.app/"
+                className="link-custom text-2xl pt-3"
+              >
+                Live Dimo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="card card-compact max-[500px]:w-[85%] max-[500px]:mx-auto w-[45%] bg-[#033F47] shadow-xl "
+          data-aos="fade-up"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <figure>
+            <img
+              src="/images/bosta.PNG"
+              alt="project"
+              className="hover:scale-110 ease-out duration-150"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Tracking system</h2>
+            <p>
+              This project is a React web application that mimics shipment
+              tracking service. It allows users to track shipments and provides
+              a responsive user interface in addition to support both arabic and
+              english langueges.
+            </p>
+            <h3>
+              <span className="font-extrabold">Technologies used:</span>{" "}
+              React.js, MUI, Moment.js.
+            </h3>
+            <div className="card-actions justify-start">
+              <a
+                href="https://bosta-henna.vercel.app/"
+                className="link-custom text-2xl pt-3"
+              >
+                Live Dimo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="card card-compact max-[500px]:w-[85%] max-[500px]:mx-auto w-[45%] bg-[#033F47] shadow-xl "
+          data-aos="fade-up"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <figure>
+            <img
               src="/images/proj1.PNG"
               alt="project"
               className="hover:scale-110 ease-out duration-150"
